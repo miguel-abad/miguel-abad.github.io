@@ -1,0 +1,32 @@
+/* Hero section */
+.hero {
+  background: linear-gradient(rgb(0, 4, 255, 0.8), rgba(1, 26, 217, 0.8)),
+              url("/images/fondoazul.jpg") center/cover no-repeat;
+  height: 82vh;
+}
+
+h1{
+  font-weight: bold;
+}
+
+p{
+  margin:0px;
+}
+.stronger{
+  background-color: #0000aa;
+  color:white;
+  font-weight: 600;
+}
+.prim, section{
+  background-color: #0281ff;
+}
+section{
+  padding: 50px;
+}
+.wt{
+  color:white;
+}
+.twt{
+  background: white;
+  padding:50px;
+}
