@@ -1,0 +1,86 @@
+/* Hero */
+
+.hero {
+  background: linear-gradient(rgb(0, 4, 255, 0.8), rgba(1, 26, 217, 0.8)),
+              url("/images/fondoazul.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  height: 82vh;
+}
+
+h1{
+  font-weight: bold;
+}
+h2{
+  color:#0000aa;
+  font-weight: 700 !important;
+}
+h3{
+  color:#0281ff;
+  font-size:19px;
+  font-weight: 500 !important;
+}
+a, p{
+  color:#3d3d3d;
+}
+p, h2, h3, li, a{
+  font-family:helvetica-w01-light,helvetica-w02-light,sans-serif;
+  text-decoration: none;
+}
+.stronger{
+  background-color: #0000aa;
+  color:white;
+  font-weight: 600;
+}
+.prim, section{
+  background-color: #0281ff;
+}
+.grese{
+  background-color: rgb(220, 220, 200);
+  height: 82vh;
+}
+section{
+  padding: 50px;
+}
+.wt{
+  color:white;
+}
+.twt{
+  background: white;
+  padding:50px;
+}
+
+/* foter */
+
+.foter {
+  background: linear-gradient(rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+              url("/images/serpiente_park.jpg") center/cover no-repeat;
+  height: 82vh;
+}
+.col-md-5{
+  padding: 30px;
+}
+
+/* Secciones con imagenes */
+
+#presentacion{
+  background: url("/images/ft/miguelabaddp.jpg") center/cover no-repeat;
+  height: 50vh;
+}
+#descripcion{
+  background: url("/images/ft/sustentacion.JPG") center/cover no-repeat;
+  height: 50vh;
+}
+#especialidades{
+  background: url("/images/ft/ucv-exposicion.JPG") center/cover no-repeat;
+  height: 50vh;
+}
+#informacion{
+  background: url("/images/ft/reforestacion.jpg") center/cover no-repeat;
+  height: 50vh;
+}
+.lucy {
+  background:
+    url("/images/fondo/luzenelcamino.jpg") center / cover no-repeat;
+  background-attachment: fixed;
+  height: 82vh;
+}
