@@ -11,18 +11,116 @@
 </head>
 <body>
   <!-- Navbar -->
+  
   <nav class="navbar navbar-expand-lg navbar-dark prim">
     <div class="container">
       <a class="navbar-brand" href="/">
         <h1>Miguel Abad</h1>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menu" aria-controls="menu"
+              aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link wt" href="/blog.html">Notas</a></li>
-          <li class="nav-item"><a class="nav-link wt" href="/intranet">Intranet</a></li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle wt"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Inicio
+            </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sobre mi</a></li>
+                <li><a class="dropdown-item" href="#">Cualificaciones y Aptitudes</a></li>
+                <li><a class="dropdown-item" href="#">Intereses y Aficciones</a></li>
+                <li><a class="dropdown-item" href="#">Actividad Extracurricular</a></li>
+              </ul>
+
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle wt"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Conocimientos
+            </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Diplomas y Certificados</a></li>
+                <li><a class="dropdown-item" href="#">Insignias Digitales</a></li>
+                <li><a class="dropdown-item" href="#">Aplicaciones y programas</a></li>
+                <li><a class="dropdown-item" href="#">Idiomas</a></li>
+              </ul>
+            
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle wt"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Experiencia
+            </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Cargos y Funciones</a></li>
+                <li><a class="dropdown-item" href="#">Talleres y Diplomados</a></li>
+                <li><a class="dropdown-item" href="#">Campo y Maquinaria</a></li>
+                <li><a class="dropdown-item" href="#">Portafolio de Diseño</a></li>
+              </ul>
+
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle wt"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Herramientas
+            </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Paginas web</a></li>
+                <li><a class="dropdown-item" href="#">Recursos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://herr-abad.github.io">Herr Abad</a></li>
+              </ul>
+
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle wt"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Contactar
+            </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Redes Sociales</a></li>
+                <li><a class="dropdown-item" href="#">Enviar Mensaje</a></li>
+              </ul>
+
+          </li>
+
         </ul>
       </div>
     </div>
@@ -154,20 +252,42 @@
     <div class="col-md-2">
       <div class="container">
         <h3>Presentación</h3>
-        <a href="/">Inicio</a>
+        <a href="/"><p>Sobre mi</p></a>
+        <a href="/"><p>Cualificaciones y Aptitudes</p></a>
+        <a href="/"><p>Intereses y Aficciones</p></a>
+        <a href="/"><p>Actividades Extracurriculares</p></a>
 
         <br><br>
 
         <h3>experiencia</h3>
+        <a href="/"><p>Cargos y Funciones</p></a>
+        <a href="/"><p>Talleres y Diplomados</p></a>
+        <a href="/"><p>Campo y Maquinaria</p></a>
+        <a href="/"><p>Portafolio de Diseños</p></a>
+
       </div>      
     </div>
     <div class="col-md-3">
       <div class="container">
         <h3>Conocimiento</h3>
+        <a href="/"><p>Diplomas y Certificados</p></a>
+          <ul>
+            <li><a href="/">Oratoria y Liderazgo</a></li>
+            <li><a href="/">Informática</a></li>
+            <li><a href="/">Medio Ambiente</a></li>
+            <li><a href="/">Educación</a></li>
+            <li><a href="/">Habilidades Transversales</a></li>
+          </ul>
+        <a href="/"><p>Insignias digitales</p></a>
+        <a href="/"><p>Aplicaciones y Programas</p></a>
+        <a href="/"><p>Idiomas</p></a>
 
         <br><br>
       
         <h3>contacto</h3>
+        <a href="/"><p>Redes Sociales</p></a>
+        <a href="/"><p>Enviar Mensaje</p></a>
+
       </div>      
     </div>
     <div class="col-md-1 grese"></div>
