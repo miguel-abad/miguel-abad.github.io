@@ -19,13 +19,18 @@ h3{
   font-size:19px;
   font-weight: 500 !important;
 }
+h4{
+  color:#00abad;
+  font-size:15px;
+  font-weight: 600 !important;
+}
 a, p{
   color:#3d3d3d;
 }
 a:hover{
   color:#00abad;
 }
-p, h2, h3, li, a{
+p, h2, h3, h4, li, a{
   font-family:helvetica-w01-light,helvetica-w02-light,sans-serif;
   text-decoration: none;
 }
@@ -43,13 +48,6 @@ p, h2, h3, li, a{
 }
 section{
   padding: 50px;
-}
-.wt{
-  color:white;
-}
-.twt{
-  background: white;
-  padding:50px;
 }
 
 /* foter */
@@ -87,18 +85,45 @@ section{
   background-attachment: fixed;
   height: 82vh;
 }
+.green {
+  background:
+    url("/images/fondo/bosque.jpg") center / cover no-repeat;
+  background-attachment: fixed;
+  height: 60vh;
+}
+.foto {
+  background:
+    url("/images/ft/fotografia.jpg") center / cover no-repeat;
+}
+
 ul{
   color:#00abad !important;
 }
 
 /* Hover dropdown SOLO en pantallas grandes */
 @media (min-width: 800px) {
-  .navbar .dropdown:hover > .dropdown-menu {
-    display: block;
-    margin-top: 0;
+  .navbar .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
   }
 
-  .navbar .dropdown > .dropdown-toggle::after {
-    pointer-events: none;
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
   }
+}
+
+.wt{
+  color:white !important;
+}
+.twt{
+  background: white;
+  padding:50px;
+}
+.center{
+  position: absolute;   /* o fixed / relative según el caso */
+  z-index: 9999;
+  width: 90%;
+  margin-top:120px;
 }
