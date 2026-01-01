@@ -1,12 +1,9 @@
-/* Hero */
+/* Configuracion Inicial */
 
-.hero {
-  background: linear-gradient(rgb(0, 4, 255, 0.8), rgba(1, 26, 217, 0.8)),
-              url("/images/fondoazul.jpg") center/cover no-repeat;
-  background-attachment: fixed;
-  height: 82vh;
+p, h2, h3, h4, li, a{
+  font-family:helvetica-w01-light,helvetica-w02-light,sans-serif;
+  text-decoration: none;
 }
-
 h1{
   font-weight: bold;
 }
@@ -30,10 +27,10 @@ a, p{
 a:hover{
   color:#00abad;
 }
-p, h2, h3, h4, li, a{
-  font-family:helvetica-w01-light,helvetica-w02-light,sans-serif;
-  text-decoration: none;
+ul{
+  color:#00abad !important;
 }
+
 .stronger{
   background-color: #0000aa;
   color:white;
@@ -49,8 +46,27 @@ p, h2, h3, h4, li, a{
 section{
   padding: 50px;
 }
+.wt{
+  color:white !important;
+}
+.twt{
+  background: white;
+  padding:50px;
+}
+.center{
+  position: absolute;   /* o fixed / relative según el caso */
+  z-index: 9999;
+  width: 90%;
+  margin-top:120px;
+}
 
-/* foter */
+/* banner con Imagenes */
+.hero {
+  background: linear-gradient(rgb(0, 4, 255, 0.8), rgba(1, 26, 217, 0.8)),
+              url("/images/fondoazul.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  height: 82vh;
+}
 
 .foter {
   background: linear-gradient(rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -62,7 +78,6 @@ section{
 }
 
 /* Secciones con imagenes */
-
 #presentacion{
   background: url("/images/ft/miguelabaddp.jpg") center/cover no-repeat;
   height: 50vh;
@@ -93,12 +108,15 @@ section{
 }
 .foto {
   background:
-    url("/images/ft/fotografia.jpg") center / cover no-repeat;
+    url("/images/ft/foto.jpg") center / cover no-repeat;
+}
+.gal-1{
+  background: linear-gradient(rgb(0, 171, 173, 0.8), rgba(0, 171, 173, 0.8)),
+              url("/images/fondo/luzenelcamino.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  height: 82vh;
 }
 
-ul{
-  color:#00abad !important;
-}
 
 /* Hover dropdown SOLO en pantallas grandes */
 @media (min-width: 800px) {
@@ -114,16 +132,20 @@ ul{
   }
 }
 
-.wt{
-  color:white !important;
+/* Tabla */
+table{
+  border-collapse: collapse;
+  width: 100%;
 }
-.twt{
-  background: white;
-  padding:50px;
+
+.td-1{
+  text-align: right;
+  padding: 8px;
+  width:25%;
 }
-.center{
-  position: absolute;   /* o fixed / relative según el caso */
-  z-index: 9999;
-  width: 90%;
-  margin-top:120px;
+.td-2{
+  border-left: 2px solid #000;
+}
+.td-3{
+  padding: 8px;
 }
