@@ -3,6 +3,7 @@
 p, h2, h3, h4, li, a{
   font-family:helvetica-w01-light,helvetica-w02-light,sans-serif;
   text-decoration: none;
+  margin:none;
 }
 h1{
   font-weight: bold;
@@ -29,6 +30,7 @@ a:hover{
 }
 ul{
   color:#00abad !important;
+  padding: 0px 0px 0px 30px !important;
 }
 
 .stronger{
@@ -39,11 +41,11 @@ ul{
 .prim, section{
   background-color: #0281ff;
 }
-.grese{
+.grs{
   background-color: rgb(220, 220, 200);
-  height: 82vh;
+  height: -webkit-fill-available;
 }
-section{
+section, .pd{
   padding: 50px;
 }
 .wt{
@@ -51,8 +53,14 @@ section{
 }
 .twt{
   background: white;
-  padding:50px;
 }
+.col-md-7{
+  padding: 80px;  
+}
+.col-md-2{
+  padding: 20px 0px 0px 20px;
+}
+
 .center{
   position: absolute;   /* o fixed / relative según el caso */
   z-index: 9999;
@@ -71,28 +79,33 @@ section{
 .foter {
   background: linear-gradient(rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
               url("/images/serpiente_park.jpg") center/cover no-repeat;
-  height: 82vh;
+height: -webkit-fill-available;
 }
-.col-md-5{
-  padding: 30px;
+.back-to-top{
+  border-radius: 100%;
+  float: right !important;
+}
+.der{
+  display: flex !important;
+  justify-content: flex-end !important; /* empuja el contenido a la derecha */
 }
 
 /* Secciones con imagenes */
 #presentacion{
   background: url("/images/ft/miguelabaddp.jpg") center/cover no-repeat;
-  height: 50vh;
+  height: -webkit-fill-available;
 }
 #descripcion{
   background: url("/images/ft/sustentacion.JPG") center/cover no-repeat;
-  height: 50vh;
+  height: -webkit-fill-available;
 }
 #especialidades{
   background: url("/images/ft/ucv-exposicion.JPG") center/cover no-repeat;
-  height: 50vh;
+  height: -webkit-fill-available;
 }
 #informacion{
   background: url("/images/ft/reforestacion.jpg") center/cover no-repeat;
-  height: 50vh;
+  height: -webkit-fill-available;
 }
 .lucy {
   background:
@@ -112,9 +125,13 @@ section{
 }
 .gal-1{
   background: linear-gradient(rgb(0, 171, 173, 0.8), rgba(0, 171, 173, 0.8)),
-              url("/images/fondo/luzenelcamino.jpg") center/cover no-repeat;
+              url("/images/fondo/raices.jpg") center/cover no-repeat;
   background-attachment: fixed;
   height: 82vh;
+}
+#manifiesto{
+  background: url("/images/ft/mamut.jpg") center/cover no-repeat;
+  height: -webkit-fill-available;
 }
 
 
