@@ -32,6 +32,9 @@ ul{
   color:#00abad !important;
   padding: 0px 0px 0px 30px !important;
 }
+span{
+  color:#3d3d3d !important;
+}
 
 .stronger{
   background-color: #0000aa;
@@ -42,7 +45,7 @@ ul{
   background-color: #0281ff;
 }
 .grs{
-  background-color: rgb(220, 220, 200);
+  background-color: rgb(220, 220, 200) !important;
   height: -webkit-fill-available;
 }
 section, .pd{
@@ -56,6 +59,9 @@ section, .pd{
 }
 .col-md-7{
   padding: 80px;  
+}
+.col-md-4{
+  height: 35vh;
 }
 .col-md-2{
   padding: 20px 0px 0px 20px;
@@ -76,10 +82,11 @@ section, .pd{
   height: 82vh;
 }
 
-.foter {
+.foter{
   background: linear-gradient(rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
               url("/images/serpiente_park.jpg") center/cover no-repeat;
-height: -webkit-fill-available;
+  height: -webkit-fill-available;
+  min-height: 650px;
 }
 .back-to-top{
   border-radius: 100%;
@@ -94,18 +101,22 @@ height: -webkit-fill-available;
 #presentacion{
   background: url("/images/ft/miguelabaddp.jpg") center/cover no-repeat;
   height: -webkit-fill-available;
+  min-height: 500px;
 }
 #descripcion{
   background: url("/images/ft/sustentacion.JPG") center/cover no-repeat;
   height: -webkit-fill-available;
+  min-height: 500px;
 }
 #especialidades{
   background: url("/images/ft/ucv-exposicion.JPG") center/cover no-repeat;
   height: -webkit-fill-available;
+  min-height: 500px;
 }
 #informacion{
   background: url("/images/ft/reforestacion.jpg") center/cover no-repeat;
   height: -webkit-fill-available;
+  min-height: 500px;
 }
 .lucy {
   background:
@@ -129,9 +140,36 @@ height: -webkit-fill-available;
   background-attachment: fixed;
   height: 82vh;
 }
+.gal-2{
+  background: linear-gradient(rgb(0, 171, 173, 0.5), rgba(0, 171, 173, 0.5)),
+              url("/images/fondo/lagoenberlin.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  height: -webkit-fill-available;
+}
+.gal-3{
+  background: linear-gradient(rgb(0, 171, 173, 0.5), rgba(0, 171, 173, 0.5)),
+              url("/images/fondo/vinedoentrabentraback.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  height: 82vh;
+}
+.gal-txt{
+  background: linear-gradient(rgb(0, 4, 255, 0.8), rgba(1, 26, 217, 0.8));
+  padding: 30px;
+  text-align: center !important;
+}
 #manifiesto{
   background: url("/images/ft/mamut.jpg") center/cover no-repeat;
   height: -webkit-fill-available;
+  min-height: 500px;
+}
+#deco{
+  background: url("/images/ft/capillasantiagoapostol.jpg") center/cover no-repeat;
+  height: -webkit-fill-available;
+  min-height: 500px;
+}
+.icono{
+  height: fit-content;
+  width: 100px;
 }
 
 
@@ -161,7 +199,7 @@ table{
   width:25%;
 }
 .td-2{
-  border-left: 2px solid #000;
+  border-left: 2px solid #0000dd;
 }
 .td-3{
   padding: 8px;
