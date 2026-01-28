@@ -163,7 +163,7 @@ section, .pd{
   min-height: 500px;
 }
 #deco{
-  background: url("/images/ft/capillasantiagoapostol.jpg") center/cover no-repeat;
+  background: url("/images/ft/capillasantiagoapostol.jpg") right/cover no-repeat;
   height: -webkit-fill-available;
   min-height: 500px;
 }
@@ -203,4 +203,5 @@ table{
 }
 .td-3{
   padding: 8px;
+
 }
