@@ -36,13 +36,24 @@ span{
   color:#3d3d3d !important;
 }
 
+.escudo{
+  float:left;
+  margin-right: 10px;
+  height: 50px;
+}
+.escudeto{
+  height:auto;
+  width: 200px;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,.99));
+}
+
 .stronger{
   background-color: #0000aa;
   color:white;
   font-weight: 600;
 }
 .prim, section{
-  background-color: #0281ff;
+  background-color: #0000dd;
 }
 .grs{
   background-color: rgb(220, 220, 200) !important;
@@ -76,7 +87,7 @@ section, .pd{
 
 /* banner con Imagenes */
 .hero {
-  background: linear-gradient(rgb(0, 4, 255, 0.8), rgba(1, 26, 217, 0.8)),
+  background: linear-gradient(rgb(0, 0, 221, 0.8), rgba(0, 0, 170, 0.8)),
               url("/images/fondoazul.jpg") center/cover no-repeat;
   background-attachment: fixed;
   height: 82vh;
@@ -84,7 +95,7 @@ section, .pd{
 
 .foter{
   background: linear-gradient(rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-              url("/images/serpiente_park.jpg") center/cover no-repeat;
+              url("/images/cocinando-bratwurst.jpg") center/cover no-repeat;
   height: -webkit-fill-available;
   min-height: 650px;
 }
@@ -99,22 +110,22 @@ section, .pd{
 
 /* Secciones con imagenes */
 #presentacion{
-  background: url("/images/ft/miguelabaddp.jpg") center/cover no-repeat;
+  background: url("/images/ft/ucv-campus.jpg") center/cover no-repeat;
   height: -webkit-fill-available;
   min-height: 500px;
 }
 #descripcion{
-  background: url("/images/ft/sustentacion.JPG") center/cover no-repeat;
+  background: url("/images/ft/voluntarios2019-2020-sn.jpg") center/cover no-repeat;
   height: -webkit-fill-available;
   min-height: 500px;
 }
 #especialidades{
-  background: url("/images/ft/ucv-exposicion.JPG") center/cover no-repeat;
+  background: url("/images/ft/peru-flora.jpg") center/cover no-repeat;
   height: -webkit-fill-available;
   min-height: 500px;
 }
 #informacion{
-  background: url("/images/ft/reforestacion.jpg") center/cover no-repeat;
+  background: url("/images/ft/miguelabaddp.jpg") center/cover no-repeat;
   height: -webkit-fill-available;
   min-height: 500px;
 }
@@ -167,6 +178,16 @@ section, .pd{
   height: -webkit-fill-available;
   min-height: 500px;
 }
+#deco-2{
+  background: url("/images/ft/capillasantiagoapostol.jpg") center/cover no-repeat;
+  height: -webkit-fill-available;
+  min-height: 500px;
+}
+#deco-3{
+  background: url("/images/ft/expo-cecoprode.jpg") center/cover no-repeat;
+  height: -webkit-fill-available;
+  min-height: 500px;
+}
 .icono{
   height: fit-content;
   width: 100px;
@@ -203,4 +224,33 @@ table{
 }
 .td-3{
   padding: 8px;
+}
+
+
+.galeria-masonry {
+  column-width: 280px;
+  column-gap: 1.2rem;
+}
+
+.galeria-masonry img {
+  width: 100%;
+  display: block;
+  margin-bottom: 1.2rem;
+  break-inside: avoid;
+  border-radius: .5rem;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.galeria-masonry img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+.galeria-item.oculto {
+  visibility: hidden;
+  height: 0;
+  margin-bottom: 0 !important;
+  overflow: hidden;
+}
+.dropdown-item{
+  margin-right: 30px;
 }
