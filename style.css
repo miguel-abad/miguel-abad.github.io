@@ -86,11 +86,40 @@ section, .pd{
 }
 
 /* banner con Imagenes */
-.hero {
-  background: linear-gradient(rgb(0, 0, 221, 0.8), rgba(0, 0, 170, 0.8)),
-              url("/images/fondoazul.jpg") center/cover no-repeat;
-  background-attachment: fixed;
-  height: 82vh;
+.hero{
+    position:relative;
+    overflow:hidden;
+    height:82vh;
+    padding: 0px;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+        linear-gradient(rgba(0,0,170,.8), rgba(0,0,221,0.8)),
+        url("/images/azul.png");
+    background-repeat:repeat-x;
+    background-size:auto 100%;
+    animation:mover 20s linear infinite;
+    z-index:0;
+}
+.hero .container{
+  z-index: 2;
+}
+
+.hero .container h1{
+  margin-top:50px;
+}
+
+@keyframes mover{
+    from{
+        background-position:0 0;
+    }
+    to{
+        background-position:-1920px 0;
+    }
 }
 
 .foter{
@@ -224,9 +253,7 @@ table{
 }
 .td-3{
   padding: 8px;
-<<<<<<< HEAD
 }
-
 
 .galeria-masonry {
   column-width: 280px;
@@ -255,7 +282,79 @@ table{
 .dropdown-item{
   margin-right: 30px;
 }
-=======
 
+
+
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-auto-rows:140px;
+    gap:18px;
 }
->>>>>>> 5047adcb17a6eb6134723579b9ec101752e985f3
+
+.galeria-item{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border:1px solid #ddd;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,.12);
+    cursor:pointer;
+}
+
+/* Distribución */
+
+.galeria-item:nth-child(1){
+    grid-column:1 / span 2;
+    grid-row:1 / span 2;
+}
+
+.galeria-item:nth-child(6){
+    grid-column:3 / span 2;
+    grid-row:2 / span 2;
+}
+
+.galeria-item:nth-child(4),
+.galeria-item:nth-child(5){
+    grid-row:3;
+}
+
+.galeria-item:nth-child(4){
+    grid-column:1;
+}
+
+.galeria-item:nth-child(5){
+    grid-column:2;
+}
+
+#visor{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.85);
+    opacity:0;
+    visibility:hidden;
+    transition:opacity .25s;
+    cursor:zoom-out;
+    z-index:9999;
+}
+#visor.activo{
+    opacity:1;
+    visibility:visible;
+}
+#imagenGrande{
+    max-width:95vw;
+    max-height:95vh;
+    object-fit:contain;
+    border-radius:8px;
+    box-shadow:0 0 30px rgba(0,0,0,.5);
+    transform:scale(.95);
+    transition:transform .25s;
+}
+#visor.activo #imagenGrande{
+    transform:scale(1);
+}
