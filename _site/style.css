@@ -89,7 +89,7 @@ section, .pd{
 .hero{
     position:relative;
     overflow:hidden;
-    height:82vh;
+    height:75vh;
     padding: 0px;
 }
 
@@ -124,7 +124,7 @@ section, .pd{
 
 .foter{
   background: linear-gradient(rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-              url("/images/cocinando-bratwurst.jpg") center/cover no-repeat;
+              url("/images/Volver.JPG") center/cover no-repeat;
   height: -webkit-fill-available;
   min-height: 650px;
 }
@@ -221,6 +221,45 @@ section, .pd{
   height: fit-content;
   width: 100px;
 }
+.dip{
+    position:relative;
+    overflow:hidden;
+    height:75vh;
+    padding: 0px;
+    background:
+        linear-gradient(rgba(0,0,170,.8), rgba(0,0,221,0.8)),
+        url("/images/fondoazul.jpg") center/cover no-repeat;
+    background-attachment: fixed;
+}
+.pruf-1{
+  background:
+    linear-gradient(rgba(255,255,0,.75), rgba(255,255,0,.75)),
+    url("/images/fondo/luzenelcamino.jpg") center / cover no-repeat;
+}
+.pruf-2{
+  background:
+    linear-gradient(rgba(13, 110, 253, .75), rgba(13, 110, 253, .75)),
+    url("/images/fondo/luzenelcamino.jpg") center / cover no-repeat;
+}
+.pruf-3{
+  background:
+    linear-gradient(rgba(25, 135, 84, .75), rgba(25, 135, 84, .75)),
+    url("/images/fondo/luzenelcamino.jpg") center / cover no-repeat;
+}
+.pruf-4{
+  background:
+    linear-gradient(rgba(33,37,41, .75), rgba(33,37,41, .75)),
+    url("/images/fondo/luzenelcamino.jpg") center / cover no-repeat;
+}
+.pruf-5{
+  background:
+    linear-gradient(rgba(220,53,69,.75), rgba(220,53,69,.75)),
+    url("/images/fondo/luzenelcamino.jpg") center / cover no-repeat;
+}
+.pruf{
+  background-attachment: fixed;
+  height: 82vh;
+}
 
 /* Hover dropdown SOLO en pantallas grandes */
 @media (min-width: 800px) {
@@ -286,14 +325,13 @@ table{
     grid-auto-rows:140px;
     gap:18px;
 }
+
 .galeria-item{
     display:block;
     width:100%;
     height:100%;
     object-fit:cover;
-    border:1px solid #ddd;
     border-radius:8px;
-    box-shadow:0 4px 10px rgba(0,0,0,.12);
     cursor:pointer;
 }
 .galeria-item:nth-child(1){
@@ -313,6 +351,12 @@ table{
 }
 .galeria-item:nth-child(5){
     grid-column:2;
+}
+.galeria-proporcion .galeria-item{
+    object-fit: contain;
+    object-position: center;
+    background-color: rgb(220, 220, 200) !important;
+    padding: 15px 0px;
 }
 #visor{
     position:fixed;
