@@ -59,6 +59,14 @@ span{
   background-color: rgb(220, 220, 200) !important;
   height: -webkit-fill-available;
 }
+.greend{
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(rgba(0, 164, 173,.8), rgba(0, 164, 173,0.8)),
+        url("/images/fondo/arboles.jpg") center/cover no-repeat;
+    background-attachment: fixed;
+}
 section, .pd{
   padding: 50px;
 }
@@ -217,6 +225,17 @@ section, .pd{
   height: -webkit-fill-available;
   min-height: 500px;
 }
+#deco-4{
+  background: url("/images/ft/donar-sangre.jpg") center/cover no-repeat;
+  height: -webkit-fill-available;
+  min-height: 500px;
+}
+#deco-5{
+  background: url("/images/ft/experiencia.JPG") center/cover no-repeat;
+  height: -webkit-fill-available;
+  min-height: 500px;
+}
+
 .icono{
   height: fit-content;
   width: 100px;
@@ -270,6 +289,33 @@ section, .pd{
   background-attachment: fixed;
   height: 82vh;
 }
+
+.inter-1{
+  background: url("/images/fondo/medio-ambiente.jpg") center/cover no-repeat;
+  height: -webkit-fill-available;
+  min-height: 500px;
+}
+.inter-2{
+  background: url("/images/fondo/ir-a-nadar.jpeg") center/cover no-repeat;
+  height: -webkit-fill-available;
+  min-height: 500px;
+}
+.inter-3{
+  background: url("/images/fondo/idiomas.jpg") center/cover no-repeat;
+  height: -webkit-fill-available;
+  min-height: 500px;
+}
+.inter-4{
+  background: url("/images/fondo/lectura.jpg") center/cover no-repeat;
+  height: -webkit-fill-available;
+  min-height: 500px;
+}
+.inter-5{
+  background: url("/images/fondo/dinosaurios.jpg") center/cover no-repeat;
+  height: -webkit-fill-available;
+  min-height: 500px;
+}
+
 
 /* Hover dropdown SOLO en pantallas grandes */
 @media (min-width: 800px) {
