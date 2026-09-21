@@ -28,6 +28,9 @@ a, p{
 a:hover{
   color:#00abad;
 }
+.badge{
+  color:black !important;
+}
 ul{
   color:#00abad !important;
   padding: 0px 0px 0px 30px !important;
@@ -45,6 +48,39 @@ span{
   height:auto;
   width: 200px;
   filter: drop-shadow(10px 10px 10px rgba(0,0,0,.99));
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 32px;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.whatsapp-float:hover {
+    color: #fff;
+    transform: scale(1.08);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 576px) {
+    .whatsapp-float {
+        width: 52px;
+        height: 52px;
+        bottom: 18px;
+        right: 18px;
+        font-size: 28px;
+    }
 }
 
 .stronger{
@@ -86,11 +122,13 @@ section, .pd{
   padding: 20px 0px 0px 20px;
 }
 
-.center{
-  position: absolute;   /* o fixed / relative según el caso */
-  z-index: 9999;
-  width: 90%;
-  margin-top:120px;
+.center {
+    position: absolute;
+    z-index: 9999;
+    width: 90%;
+    margin-top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* banner con Imagenes */
@@ -259,6 +297,16 @@ section, .pd{
         linear-gradient(rgba(0,0,170,.8), rgba(0,0,221,0.8)),
         url("/images/fondo/camino-casa.jpg") center/cover no-repeat;
     background-attachment: fixed;
+}
+.diper{
+  position:relative;
+  overflow:hidden;
+  height:75vh;
+  padding: 0px;
+  background:
+      linear-gradient(rgba(0,0,170,.8), rgba(0,0,221,0.8)),
+      url("/images/fondo/perspective.png") center/cover no-repeat;
+  background-attachment: fixed;
 }
 .pruf-1{
   background:
